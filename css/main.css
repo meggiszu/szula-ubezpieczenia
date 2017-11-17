@@ -62,7 +62,7 @@ header {
 .container {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 2 0px;
   text-align: center;
   padding-top: 50px;
 
@@ -153,6 +153,10 @@ h3 {
   list-style-type: square
 }
 
+ul {
+  list-style-position: outside;
+}
+
 h4 {
   font-size: 1.7rem;
 }
@@ -172,7 +176,7 @@ h5 {
 .map {
   
   width: 100%;
-  padding-top: 50px;
+  padding-top: 15px;
   text-align: center;
   }
 
@@ -222,6 +226,10 @@ hr.underline {
   font-size: 17px;
   }
 
+  header {
+   min-height: 60vh;
+ }
+
   .photo_left {
     margin: 0;
     display: none;
@@ -232,9 +240,11 @@ hr.underline {
     width: 100%;
   }
 
-  .flex_container {
-  
+  .container {
+    padding-top: 28px;
   }
+
+
   hr.underline {
     display: none;
   }
