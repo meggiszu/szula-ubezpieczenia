@@ -9,11 +9,20 @@ document.addEventListener("DOMContentLoaded", function(e) {
 			document.getElementById(id).scrollIntoView({ 
         behavior: 'smooth',
         block: "start"
-      });
+      });#menu
 
 		})
 	})
 
+
+    function myFunction() {
+	  const x = querrySelector("#menu sticky");
+	    if (x.className === "#menu sticky") {
+		  x.className += " responsive";
+	    } else {
+		  x.className = "#menu sticky";
+	    }
+     }
 
 })
 
