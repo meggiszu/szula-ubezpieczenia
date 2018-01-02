@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function(e) {
 	
 	const navButtons = document.querySelectorAll(".menu span")
@@ -9,20 +10,23 @@ document.addEventListener("DOMContentLoaded", function(e) {
 			document.getElementById(id).scrollIntoView({ 
         behavior: 'smooth',
         block: "start"
-      });#menu
+      })
 
 		})
 	})
 
 
-    function myFunction() {
-	  const x = querrySelector("#menu sticky");
-	    if (x.className === "#menu sticky") {
-		  x.className += " responsive";
-	    } else {
-		  x.className = "#menu sticky";
-	    }
-     }
+    const button = document.querySelector("#moa");
+    const moaMenu = document.querySelector("#moa-menu");
+
+    button.addEventListener("click", function() {
+      if (moaMenu.className === "menu sticky") {
+        moaMenu.className += " responsive";
+      } else {
+      	moaMenu.className = "menu sticky";
+      }
+
+    })
 
 })
 
