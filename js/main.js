@@ -1,19 +1,32 @@
 document.addEventListener("DOMContentLoaded", function(e) {
-	
-	const navButtons = document.querySelectorAll(".menu span")
+  function toggleMenu(moaMenu) {
+    if (moaMenu.className === "menu sticky") {
+      moaMenu.className += " responsive";
+    } else {
+      moaMenu.className = "menu sticky";
+    }
+  }
 
-	navButtons.forEach(function(button){
+  const navButtons = document.querySelectorAll(".menu span")
+  const moaMenu = document.querySelector("#moa-menu");
+
+  for(var i=0; i < navButtons.length; i++) {
+    const button = navButtons[i]
     const id = button.getAttribute("data-name")
+    button.addEventListener('click', function() {
+      toggleMenu(moaMenu)
 
-		button.addEventListener('click', function() {
-			document.getElementById(id).scrollIntoView({ 
+      document.getElementById(id).scrollIntoView({
         behavior: 'smooth',
         block: "start"
-      });
+      })
+    })
 
-		})
-	})
+  }
 
+  const moaButton = document.querySelector("#moa");
 
+  moaButton.addEventListener("click", function() {
+    toggleMenu(moaMenu)
+  })
 })
-
