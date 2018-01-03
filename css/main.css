@@ -50,10 +50,10 @@ a.navigation-menu-button {
 @media screen and (max-width: 608px) {
   span {display: none;}
   a.navigation-menu-button {
-    float: right;
+    float: left;
     display: block;
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 0;
   }
 }
