@@ -79,23 +79,19 @@ header {
   background-image: url('../img/office.jpeg');
   background-size: cover;
   min-height: 100vh;
-  
+
   text-align: center;
   line-height: 100px;
   color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2 0px;
-  text-align: center;
   padding-top: 50px;
-
+  text-align: center;
 }
 
 h1 {
@@ -138,7 +134,7 @@ h3 {
 }
 
 
-.flex_container { 
+.flex_container {
   margin: 30px;
   display: flex;
   width: 85vw;
@@ -203,7 +199,7 @@ h5 {
 }
 
 .map {
-  
+
   width: 100%;
   padding-top: 15px;
   text-align: center;
@@ -290,7 +286,7 @@ hr.underline {
   nav.menu.sticky {
     font-size: 19px;
 
-  } 
+  }
 }
 
 @media (min-width: 992px) {
@@ -303,9 +299,5 @@ hr.underline {
   nav.menu.sticky {
     font-size: 20px;
 
-  } 
+  }
 }
-
-
-
-
