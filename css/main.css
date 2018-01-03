@@ -28,6 +28,7 @@ span {
   text-transform: uppercase;
   font-size: 18px;
   color: #000;
+  cursor: pointer;
 }
 
 
@@ -42,6 +43,7 @@ a.navigation-menu-button {
   display: none;
   color: #000;
   text-decoration: none;
+
 
 }
 
@@ -58,7 +60,7 @@ a.navigation-menu-button {
 
 @media screen and (max-width: 608px){
   nav.menu.sticky.responsive {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }
@@ -250,7 +252,9 @@ hr.underline {
   }
 
   nav.menu a {
-  font-size: 17px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #484a4c;
   }
 
   header {
